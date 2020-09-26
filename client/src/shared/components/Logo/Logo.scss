@@ -1,0 +1,23 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.zubi-logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  p {
+    display: inline-block;
+    margin: auto 1rem;
+    @include fluid-type(
+      0.75rem,
+      1rem,
+      $min-breakpoint-font-size,
+      $max-breakpoint-font-size
+    );
+  }
+}

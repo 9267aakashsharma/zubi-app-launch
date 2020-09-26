@@ -1,0 +1,48 @@
+@import "./variables";
+
+@mixin BoxShadow($color: rgba(0, 0, 0, 0.2)) {
+  box-shadow: 0px 4px 12px 2px $color;
+}
+
+@mixin for-tablet-only {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin for-small-screens {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-only {
+  @media only screen and (max-width: 576px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin fluid-type(
+  $min-font-size: 12px,
+  $max-font-size: 21px,
+  $lower-range: 420px,
+  $upper-range: 900px
+) {
+  font-size: calc(
+    #{$min-font-size} + #{(
+        ($max-font-size / ($max-font-size * 0 + 1)) -
+          ($min-font-size / ($min-font-size * 0 + 1))
+      )} * ((100vw - #{$lower-range}) / #{(
+            ($upper-range / ($upper-range * 0 + 1)) -
+              ($lower-range / ($lower-range * 0 + 1))
+          )})
+  );
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+
+  @media screen and (min-width: $upper-range) {
+    font-size: $max-font-size;
+  }
+}
