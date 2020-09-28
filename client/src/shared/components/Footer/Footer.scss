@@ -1,0 +1,170 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.zubi-footer {
+  position: relative;
+  background-color: var(--background-tertiary);
+  padding: 2rem 0rem;
+  @include for-mobile-only {
+    padding: 1rem 0 0;
+  }
+  div.inner {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: auto 10rem;
+    justify-content: space-between;
+
+    @include for-mobile-only {
+      padding: 0;
+      margin: auto 1rem;
+    }
+
+    @include for-mobile-only {
+      flex-direction: column;
+    }
+    div.logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 1;
+      align-items: center;
+      padding: 3rem 4rem;
+      @include for-mobile-only {
+        padding: 1rem 2rem;
+      }
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+      h2 {
+        margin-top: 1.5rem;
+        font-weight: 700;
+        @include for-mobile-only {
+          margin-top: 0.5rem;
+        }
+        @include fluid-type(
+          1rem,
+          1.5rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+      }
+    }
+    div.content {
+      display: flex;
+      flex-direction: row;
+      flex: 1 0;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @include for-mobile-only {
+        margin: 0 3rem;
+        justify-content: flex-start;
+      }
+      & > div {
+        display: flex;
+        margin: 0 4rem;
+        flex-direction: column;
+        @include for-mobile-only {
+          margin: 0 1rem;
+        }
+        h2 {
+          font-weight: 700;
+          margin: 0.75rem 0;
+          @include fluid-type(
+            1rem,
+            1rem,
+            $min-breakpoint-font-size,
+            $max-breakpoint-font-size
+          );
+        }
+        p {
+          color: var(--text-primary);
+          margin: 0.5rem 0;
+          @include fluid-type(
+            0.75rem,
+            1rem,
+            $min-breakpoint-font-size,
+            $max-breakpoint-font-size
+          );
+        }
+        a {
+          text-decoration: none;
+          margin: 0.5rem 0;
+          color: var(--text-primary);
+          @include fluid-type(
+            0.75rem,
+            1rem,
+            $min-breakpoint-font-size,
+            $max-breakpoint-font-size
+          );
+        }
+      }
+    }
+  }
+  div.zubi-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 4rem 10rem 0;
+    small {
+      color: var(--text-primary);
+      font-size: 1rem;
+      margin: 0 12rem;
+      @include fluid-type(
+        0.75rem,
+        1rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    @include for-mobile-only {
+      flex-direction: column-reverse;
+      margin: 1rem 2rem 0;
+      small {
+        margin: 0 2rem;
+      }
+    }
+    @include for-tablet-only {
+      small {
+        margin: 0 3rem;
+      }
+    }
+    @include for-small-screens {
+      small {
+        margin: 0 4rem;
+      }
+    }
+    @include for-large-screens {
+      small {
+        margin: 0 4rem;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin: 0 1.5rem;
+        @include for-mobile-only {
+          margin: 0 0.5rem;
+        }
+        a {
+          text-decoration: none;
+          color: var(--text-primary);
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            @include for-mobile-only {
+              width: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
