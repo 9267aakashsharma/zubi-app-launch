@@ -6,10 +6,11 @@ import { Home } from "./modules";
 const styleTheme = {
   "--primary": "#07D6D4",
   "--secondary": "#EAEFF7",
-  "--text-primary": "#000000",
-  "--text-secondary": "#fafafa",
+  "--text-primary": "#ffffff",
+  "--text-secondary": "#000000",
   "--background-primary": "#000000",
-  "--background-secondary": "#fafafa",
+  "--background-secondary": "#ffffff",
+  "--background-tertiary": "#1b212c",
 } as React.CSSProperties;
 
 function App() {

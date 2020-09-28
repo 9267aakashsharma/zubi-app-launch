@@ -16,6 +16,12 @@
   }
 }
 
+@mixin for-large-screens {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin for-mobile-only {
   @media only screen and (max-width: 576px) and (orientation: portrait) {
     @content;
