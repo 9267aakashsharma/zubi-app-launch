@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="73.897" height="73.896" viewBox="0 0 73.897 73.896">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="_Group_">
+        <path id="_Path_" d="M73.9 73.9H0V0h54.4a2.037 2.037 0 0 1 0 4.073H4.073v65.751h65.751v-50.33a2.037 2.037 0 1 1 4.073 0z" class="cls-1"/>
+    </g>
+    <g id="_Group_2" transform="translate(10.755 11.636)">
+        <path id="_Path_2" d="M142.352 104.073H94.979a2.037 2.037 0 1 1 0-4.073h47.373a2.037 2.037 0 1 1 0 4.073z" class="cls-1" transform="translate(-92.885 -99.999)"/>
+    </g>
+    <g id="_Group_3" transform="translate(11.423 12.218)">
+        <path id="_Path_3" d="M0 0h66.415v4.073H0z" class="cls-1" transform="rotate(-44.5 56.893 23.276)"/>
+    </g>
+    <g id="_Group_4" transform="translate(10.754 58.185)">
+        <path id="_Path_4" d="M142.352 504.073H94.98a2.037 2.037 0 1 1 0-4.073h47.373a2.037 2.037 0 1 1 0 4.073z" class="cls-1" transform="translate(-92.884 -499.999)"/>
+    </g>
+    <g id="_Group_5" transform="translate(70.395 .869)">
+        <circle id="Ellipse_34" cx="1.625" cy="1.625" r="1.625" class="cls-1"/>
+    </g>
+</svg>

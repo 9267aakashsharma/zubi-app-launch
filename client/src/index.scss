@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@import "./mixins";
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -9,6 +11,9 @@
 body {
   position: relative;
   height: 100%;
+  background-color: $background-primary;
+  color: $text-primary;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -22,4 +27,8 @@ span,
 a,
 button {
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
