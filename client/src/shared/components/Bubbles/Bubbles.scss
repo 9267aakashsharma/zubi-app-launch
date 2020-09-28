@@ -2,6 +2,24 @@
 @import "../../../mixins";
 
 div.zubi-bubbles {
+  $s-20: 20px;
+  $s-60: 60px;
+  $s-80: 80px;
+  $s-100: 100px;
+  $s-150: 150px;
+  $s-120: 120px;
+  $s-200: 200px;
+  $s-250: 250px;
+
+  $s-m-20: calc(#{$s-20} / 2);
+  $s-m-60: calc(#{$s-60} / 2);
+  $s-m-80: calc(#{$s-80} / 2);
+  $s-m-100: calc(#{$s-100} / 2);
+  $s-m-150: calc(#{$s-150} / 2);
+  $s-m-120: calc(#{$s-120} / 2);
+  $s-m-200: calc(#{$s-200} / 2);
+  $s-m-250: calc(#{$s-250} / 2);
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -15,20 +33,34 @@ div.zubi-bubbles {
 
   div.circle1 {
     position: absolute;
-    left: 5%;
-    top: 5%;
+    right: 65%;
+    bottom: 72%;
     background-color: var(--primary);
-    width: 100px;
-    height: 100px;
+    width: $s-150;
+    height: $s-150;
     animation: circlePOP1 1s linear infinite alternate-reverse;
     @keyframes circlePOP1 {
       0% {
-        width: 100px;
-        height: 100px;
+        width: $s-120;
+        height: $s-120;
       }
       100% {
-        width: 120px;
-        height: 120px;
+        width: $s-150;
+        height: $s-150;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-150;
+      height: $s-m-150;
+      @keyframes circlePOP1 {
+        0% {
+          width: $s-m-100;
+          height: $s-m-100;
+        }
+        100% {
+          width: $s-m-150;
+          height: $s-m-150;
+        }
       }
     }
   }
@@ -38,106 +70,180 @@ div.zubi-bubbles {
     right: -10%;
     top: 30%;
     background-color: var(--primary);
-    width: 300px;
-    height: 300px;
+    width: $s-250;
+    height: $s-250;
     animation: circlePOP2 1s linear infinite alternate-reverse;
     @keyframes circlePOP2 {
       0% {
-        width: 250px;
-        height: 250px;
+        width: $s-250;
+        height: $s-250;
       }
       100% {
-        width: 200px;
-        height: 200px;
+        width: $s-200;
+        height: $s-200;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-250;
+      height: $s-m-250;
+      @keyframes circlePOP2 {
+        0% {
+          width: $s-m-250;
+          height: $s-m-250;
+        }
+        100% {
+          width: $s-m-200;
+          height: $s-m-200;
+        }
       }
     }
   }
 
   div.circle3 {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: $s-20;
+    height: $s-20;
     top: 0;
     left: 0;
     background-color: var(--secondary);
+    @include for-mobile-only {
+      width: $s-m-20;
+      height: $s-m-20;
+    }
   }
 
   div.circle4 {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    bottom: 80%;
-    left: 60%;
+    width: $s-80;
+    height: $s-80;
+    bottom: 75%;
+    left: 70%;
     background-color: var(--secondary);
     animation: circlePOP4 1s linear infinite alternate-reverse;
     @keyframes circlePOP4 {
       0% {
-        width: 80px;
-        height: 80px;
+        width: $s-80;
+        height: $s-80;
       }
       100% {
-        width: 100px;
-        height: 100px;
+        width: $s-100;
+        height: $s-100;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-80;
+      height: $s-m-80;
+      @keyframes circlePOP4 {
+        0% {
+          width: $s-m-80;
+          height: $s-m-80;
+        }
+        100% {
+          width: $s-m-100;
+          height: $s-m-100;
+        }
       }
     }
   }
 
   div.circle5 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: $s-100;
+    height: $s-100;
     bottom: 20%;
     left: 60%;
     background-color: var(--secondary);
     animation: circlePOP5 1s linear infinite alternate-reverse;
     @keyframes circlePOP5 {
       0% {
-        width: 100px;
-        height: 100px;
+        width: $s-100;
+        height: $s-100;
       }
       100% {
-        width: 80px;
-        height: 80px;
+        width: $s-60;
+        height: $s-60;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-100;
+      height: $s-m-100;
+      @keyframes circlePOP5 {
+        0% {
+          width: $s-m-100;
+          height: $s-m-100;
+        }
+        100% {
+          width: $s-m-60;
+          height: $s-m-60;
+        }
       }
     }
   }
 
   div.circle6 {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    bottom: 30%;
-    right: 70%;
+    width: $s-60;
+    height: $s-60;
+    bottom: 40%;
+    right: 65%;
     background-color: var(--primary);
     animation: circlePOP6 1s linear infinite alternate-reverse;
     @keyframes circlePOP6 {
       0% {
-        width: 80px;
-        height: 80px;
+        width: $s-60;
+        height: $s-60;
       }
       100% {
-        width: 100px;
-        height: 100px;
+        width: $s-100;
+        height: $s-100;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-60;
+      height: $s-m-60;
+      @keyframes circlePOP6 {
+        0% {
+          width: $s-m-60;
+          height: $s-m-60;
+        }
+        100% {
+          width: $s-m-100;
+          height: $s-m-100;
+        }
       }
     }
   }
 
   div.circle7 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: $s-100;
+    height: $s-100;
     bottom: -10%;
     left: 70%;
     background-color: var(--secondary);
     animation: circlePOP7 1s linear infinite alternate-reverse;
     @keyframes circlePOP7 {
       0% {
-        width: 100px;
-        height: 100px;
+        width: $s-100;
+        height: $s-100;
       }
       100% {
-        width: 150px;
-        height: 150px;
+        width: $s-150;
+        height: $s-150;
+      }
+    }
+    @include for-mobile-only {
+      width: $s-m-100;
+      height: $s-m-100;
+      @keyframes circlePOP7 {
+        0% {
+          width: $s-m-100;
+          height: $s-m-100;
+        }
+        100% {
+          width: $s-m-150;
+          height: $s-m-150;
+        }
       }
     }
   }
