@@ -8,9 +8,11 @@ const Navbar = () => {
     <div className="zubi-navbar">
       <Logo />
       <div className="links">
-        <a href={RedirectURL.Blog}>Blogs</a>
-        <a href={RedirectURL.Hiring}>Hiring</a>
-        <button className="get-app">Get access to Zubi app</button>
+        <a href={RedirectURL.Zubi.Blog}>Blogs</a>
+        <a href={RedirectURL.Zubi.Hiring}>Hiring</a>
+        <a className="get-app" href={RedirectURL.DownloadApp}>
+          Get Zubi app
+        </a>
       </div>
     </div>
   );
