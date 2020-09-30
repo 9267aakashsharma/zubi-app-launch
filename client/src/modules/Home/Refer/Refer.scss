@@ -1,0 +1,232 @@
+@import "../../../mixins";
+@import "../../../variables";
+
+div.zubi-refer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div.inner {
+    display: flex;
+    flex-direction: row;
+    div.content {
+      width: 50%;
+      padding: 2rem 4rem;
+      z-index: 1;
+      h1 {
+        text-transform: uppercase;
+        font-style: italic;
+        margin: 4rem 0;
+        font-weight: 600;
+        @include fluid-type(
+          2rem,
+          3rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+      }
+      p {
+        margin: 4rem auto;
+        @include fluid-type(
+          0.75rem,
+          1rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+      }
+      @include for-mobile-only {
+        width: 100%;
+      }
+      @include for-small-screens {
+        width: 100%;
+      }
+    }
+  }
+
+  div.zubi-static-bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    div.circle1 {
+      position: absolute;
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      background-color: var(--primary);
+      right: 10%;
+      top: 20%;
+    }
+    div.circle2 {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: var(--primary);
+      left: 10%;
+      bottom: 20%;
+    }
+    div.circle3 {
+      position: absolute;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      left: 50%;
+      bottom: -12%;
+      z-index: 1;
+    }
+    div.stick {
+      position: absolute;
+      width: 0.25rem;
+      height: 10rem;
+      top: 50%;
+      left: 50%;
+      border-radius: 0.25rem;
+      background-color: var(--secondary);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@include for-large-screens {
+  div.zubi-refer {
+    div.inner {
+      flex-direction: row;
+      div.content {
+        width: 50%;
+        padding: 2rem 4rem;
+        h1 {
+          margin: 4rem 0;
+        }
+        p {
+          margin: 4rem auto;
+        }
+      }
+    }
+  }
+}
+@include for-small-screens {
+  div.zubi-refer {
+    div.inner {
+      flex-direction: row;
+      div.content {
+        width: 50%;
+        padding: 1rem 2rem;
+        h1 {
+          margin: 2rem 0;
+        }
+        p {
+          margin: 3rem auto;
+        }
+      }
+    }
+    div.zubi-static-bubbles {
+      div.circle1 {
+        width: 8rem;
+        height: 8rem;
+        right: 8%;
+        top: 15%;
+      }
+      div.circle2 {
+        width: 3rem;
+        height: 3rem;
+        left: 5%;
+        bottom: 10%;
+      }
+      div.circle3 {
+        width: 4rem;
+        height: 4rem;
+        left: 50%;
+        bottom: -15%;
+      }
+    }
+  }
+}
+@include for-tablet-only {
+  div.zubi-refer {
+    div.inner {
+      flex-direction: column;
+      div.content {
+        width: 100%;
+        margin: 2rem auto;
+        padding: 0;
+        h1 {
+          margin: 0;
+        }
+        p {
+          margin: 2rem auto;
+        }
+      }
+    }
+    div.zubi-static-bubbles {
+      div.circle1 {
+        width: 6rem;
+        height: 6rem;
+        right: 5%;
+        top: 5%;
+      }
+      div.circle2 {
+        width: 3rem;
+        height: 3rem;
+        left: 5%;
+        bottom: 5%;
+      }
+      div.circle3 {
+        width: 4rem;
+        height: 4rem;
+        left: 50%;
+        bottom: -15%;
+      }
+      div.stick {
+        display: none;
+      }
+    }
+  }
+}
+@include for-mobile-only {
+  div.zubi-refer {
+    div.inner {
+      flex-direction: column;
+      div.content {
+        width: 100%;
+        margin: 2rem auto;
+        padding: 0;
+        h1 {
+          margin: 0;
+        }
+        p {
+          margin: 2rem auto;
+        }
+      }
+    }
+    div.zubi-static-bubbles {
+      div.circle1 {
+        width: 6rem;
+        height: 6rem;
+        right: 5%;
+        top: 5%;
+      }
+      div.circle2 {
+        width: 4rem;
+        height: 4rem;
+        left: 5%;
+        bottom: 2%;
+      }
+      div.circle3 {
+        width: 4rem;
+        height: 4rem;
+        left: 50%;
+        bottom: -15%;
+      }
+      div.stick {
+        display: none;
+      }
+    }
+  }
+}
