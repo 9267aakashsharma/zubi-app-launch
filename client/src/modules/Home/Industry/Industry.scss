@@ -1,0 +1,139 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.zubi-industry {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+
+  div.content {
+    width: 50%;
+    padding: 2rem;
+    h1 {
+      @include fluid-type(
+        1.5rem,
+        2.5rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    p {
+      margin: 4rem 2rem 4rem 0;
+      font-weight: 500;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    a {
+      padding: 1rem 2.5rem;
+      color: var(--text-secondary);
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 2rem;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+      background-color: var(--background-secondary);
+    }
+  }
+  div.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90%;
+    }
+    @include for-mobile-only {
+      width: 100%;
+    }
+    @include for-small-screens {
+      width: 100%;
+    }
+  }
+
+  @include for-large-screens {
+    flex-direction: row;
+    div.content {
+      padding: 2rem;
+      p {
+        margin: 4rem 2rem 4rem 0;
+      }
+    }
+    div.image {
+      width: 50%;
+      img {
+        width: 90%;
+      }
+    }
+  }
+  @include for-small-screens {
+    flex-direction: row;
+    div.content {
+      padding: 1rem;
+      p {
+        margin: 2rem 1rem 2rem 0;
+      }
+      a {
+        padding: 1rem 2rem;
+      }
+    }
+    div.image {
+      width: 50%;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  @include for-tablet-only {
+    flex-direction: column-reverse;
+    div.content {
+      padding: 0;
+      width: 100%;
+      margin: 4rem 0;
+      p {
+        margin: 1.5rem auto;
+      }
+      a {
+        padding: 0.75rem 1.75rem;
+      }
+    }
+    div.image {
+      width: 100%;
+      margin: 4rem auto;
+      img {
+        width: 90%;
+      }
+    }
+  }
+  @include for-mobile-only {
+    flex-direction: column-reverse;
+    div.content {
+      padding: 0;
+      width: 90%;
+      margin: 4rem 0;
+      p {
+        margin: 1.5rem auto;
+      }
+      a {
+        padding: 0.5rem 1.5rem;
+      }
+    }
+    div.image {
+      width: 100%;
+      margin: 4rem auto;
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
