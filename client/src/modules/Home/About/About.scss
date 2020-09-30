@@ -1,0 +1,139 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.zubi-about {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  div.content {
+    width: 50%;
+    padding: 2rem;
+    z-index: 1;
+    h1 {
+      @include fluid-type(
+        1.5rem,
+        2.5rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    p {
+      margin: 4rem 2rem 4rem 0;
+      font-weight: 500;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    a {
+      padding: 1rem 2.5rem;
+      color: var(--text-secondary);
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 2rem;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+      background-color: var(--background-secondary);
+    }
+  }
+  div.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    img {
+      width: 90%;
+    }
+    @include for-mobile-only {
+      width: 100%;
+    }
+    @include for-small-screens {
+      width: 100%;
+    }
+  }
+
+  div.zubi-static-bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    div.circle1 {
+      position: absolute;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      right: 5%;
+      top: 5%;
+    }
+    div.circle2 {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      left: 0;
+      bottom: 50%;
+    }
+  }
+
+  @include for-large-screens {
+    flex-direction: row;
+    div.content {
+      width: 50%;
+    }
+  }
+  @include for-small-screens {
+    flex-direction: row;
+    div.content {
+      width: 50%;
+      padding: 1rem;
+      p {
+        margin: 2rem 1rem 2rem 0;
+      }
+    }
+  }
+  @include for-tablet-only {
+    flex-direction: column;
+    div.content {
+      width: 100%;
+      padding: 0;
+      margin: 4rem auto;
+      p {
+        margin: 2rem 0;
+      }
+    }
+    div.image {
+      width: 100%;
+      padding: 0;
+      margin: 4rem auto;
+    }
+  }
+  @include for-mobile-only {
+    flex-direction: column;
+    div.content {
+      width: 100%;
+      padding: 0;
+      margin: 4rem auto;
+      p {
+        margin: 2rem 0;
+      }
+    }
+    div.image {
+      width: 100%;
+      padding: 0;
+      margin: 4rem auto;
+    }
+  }
+}
