@@ -1,6 +1,30 @@
+@import "../../../mixins";
+@import "../../../variables";
+
 div.zubi-section {
   position: relative;
   padding: 2rem 4rem;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  background-color: var(--background-primary);
+
+  &.bgSecondary {
+    background-color: var(--primary);
+  }
+
+  @include for-large-screens {
+    padding: 2rem 4rem;
+  }
+
+  @include for-small-screens {
+    padding: 1rem 2rem;
+  }
+
+  @include for-tablet-only {
+    padding: 1rem 2rem;
+  }
+
+  @include for-mobile-only {
+    padding: 1rem 2rem;
+  }
 }
