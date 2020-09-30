@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { Home } from "./modules";
 
-const styleTheme = {
+export const styleTheme = {
   "--primary": "#07D6D4",
   "--secondary": "#EAEFF7",
   "--text-primary": "#ffffff",
