@@ -16,6 +16,17 @@ div.zubi-download {
     display: flex;
     flex-direction: column;
     align-items: center;
+    h1 {
+      @include fluid-type(
+        1.5rem,
+        2.5rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+      span {
+        color: var(--primary);
+      }
+    }
     p {
       margin-bottom: 1rem;
       @include fluid-type(
@@ -37,7 +48,8 @@ div.zubi-download {
         $min-breakpoint-font-size,
         $max-breakpoint-font-size
       );
-      background-color: var(--background-secondary);
+      background-color: var(--primary);
+      box-shadow: 0 20px 30px -20px var(--primary);
     }
   }
   @include for-large-screens {

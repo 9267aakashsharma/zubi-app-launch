@@ -4,7 +4,7 @@ import "./App.scss";
 import { Home } from "./modules";
 
 export const styleTheme = {
-  "--primary": "#07D6D4",
+  "--primary": "#00C2C0",
   "--secondary": "#EAEFF7",
   "--text-primary": "#ffffff",
   "--text-secondary": "#000000",

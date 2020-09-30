@@ -19,7 +19,9 @@ const Download = () => {
         <Lottie options={defaultOptions} isStopped={false} isPaused={false} />
       </div>
       <div className="content">
-        <h1>What are you waiting for?</h1>
+        <h1>
+          What are you <span>waiting</span> for?
+        </h1>
         <p>Push yourself because no one else is going to do it for you.</p>
         <a href={RedirectURL.DownloadApp}>Download Now</a>
       </div>

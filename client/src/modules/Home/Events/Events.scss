@@ -38,8 +38,10 @@ div.zubi-events {
     }
     a {
       padding: 1rem 2.5rem;
-      color: var(--text-secondary);
-      font-weight: 700;
+      color: var(--text-primary);
+      background-color: var(--background-primary);
+      box-shadow: 0 25px 40px -20px var(--background-primary);
+      font-weight: 600;
       text-transform: uppercase;
       border-radius: 2rem;
       @include fluid-type(
@@ -48,7 +50,6 @@ div.zubi-events {
         $min-breakpoint-font-size,
         $max-breakpoint-font-size
       );
-      background-color: var(--background-secondary);
     }
     @include for-large-screens {
       padding: 2rem;
@@ -91,6 +92,15 @@ div.zubi-events {
     z-index: 1;
     img {
       width: 45%;
+      animation: flipY 1s linear infinite alternate-reverse;
+      @keyframes flipY {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(2rem);
+        }
+      }
     }
     @include for-small-screens {
       width: 100%;
@@ -118,6 +128,17 @@ div.zubi-events {
       right: 0;
       top: 40%;
       background-color: var(--secondary);
+      animation: circlePOP1 1s linear infinite alternate-reverse;
+      @keyframes circlePOP1 {
+        0% {
+          width: 8rem;
+          height: 8rem;
+        }
+        100% {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
     div.circle2 {
       position: absolute;
@@ -127,6 +148,17 @@ div.zubi-events {
       bottom: 10%;
       left: 0;
       background-color: var(--secondary);
+      animation: circlePOP2 1s linear infinite alternate-reverse;
+      @keyframes circlePOP2 {
+        0% {
+          width: 4rem;
+          height: 4rem;
+        }
+        100% {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
     @include for-small-screens {
       div.circle1 {

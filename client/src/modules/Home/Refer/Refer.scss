@@ -28,6 +28,9 @@ div.zubi-refer {
           $min-breakpoint-font-size,
           $max-breakpoint-font-size
         );
+        span {
+          color: var(--primary);
+        }
       }
       p {
         margin: 4rem auto;
@@ -61,6 +64,17 @@ div.zubi-refer {
       background-color: var(--primary);
       right: 10%;
       top: 20%;
+      animation: circlePOP1 1s linear infinite alternate-reverse;
+      @keyframes circlePOP1 {
+        0% {
+          width: 12rem;
+          height: 12rem;
+        }
+        100% {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
     div.circle2 {
       position: absolute;
@@ -70,6 +84,17 @@ div.zubi-refer {
       background-color: var(--primary);
       left: 10%;
       bottom: 20%;
+      animation: circlePOP2 1s linear infinite alternate-reverse;
+      @keyframes circlePOP2 {
+        0% {
+          width: 4rem;
+          height: 4rem;
+        }
+        100% {
+          width: 8rem;
+          height: 8rem;
+        }
+      }
     }
     div.circle3 {
       position: absolute;
@@ -80,6 +105,51 @@ div.zubi-refer {
       left: 50%;
       bottom: -12%;
       z-index: 1;
+      animation: circlePOP3 1s linear infinite alternate-reverse;
+      @keyframes circlePOP3 {
+        0% {
+          width: 6rem;
+          height: 6rem;
+        }
+        100% {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+    div.circle4 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      bottom: 95%;
+      left: 75%;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      animation: circlePOP4 1s linear infinite alternate-reverse;
+      @keyframes circlePOP4 {
+        0% {
+          width: 100px;
+          height: 100px;
+        }
+        100% {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      @include for-mobile-only {
+        width: 50px;
+        height: 50px;
+        @keyframes circlePOP4 {
+          0% {
+            width: 50px;
+            height: 50px;
+          }
+          100% {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
     }
     div.stick {
       position: absolute;

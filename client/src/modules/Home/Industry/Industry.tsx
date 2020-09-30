@@ -6,7 +6,9 @@ const Industry = () => {
   return (
     <div className="zubi-industry">
       <div className="content">
-        <h1>Straight From Industry Leaders to You. Nailed it</h1>
+        <h1>
+          Straight From <span>Industry Leaders</span> to You. Nailed it
+        </h1>
         <p>
           Our learning modules are skills-based, not time-based. Expect the best
           live-streamed content, asynchronous curriculum, industry-vetted group

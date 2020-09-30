@@ -76,6 +76,17 @@ div.zubi-about {
       background-color: var(--secondary);
       right: 5%;
       top: 5%;
+      animation: circlePOP1 1s linear infinite alternate-reverse;
+      @keyframes circlePOP1 {
+        0% {
+          width: 8rem;
+          height: 8rem;
+        }
+        100% {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
     div.circle2 {
       position: absolute;
@@ -85,6 +96,17 @@ div.zubi-about {
       background-color: var(--secondary);
       left: 0;
       bottom: 50%;
+      animation: circlePOP2 1s linear infinite alternate-reverse;
+      @keyframes circlePOP2 {
+        0% {
+          width: 4rem;
+          height: 4rem;
+        }
+        100% {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
     }
   }
 
