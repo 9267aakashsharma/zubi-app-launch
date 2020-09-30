@@ -112,7 +112,7 @@ div.zubi-footer {
     small {
       color: var(--text-primary);
       font-size: 1rem;
-      margin: 0 12rem;
+      margin: 0 auto;
       @include fluid-type(
         0.75rem,
         1rem,
@@ -123,24 +123,6 @@ div.zubi-footer {
     @include for-mobile-only {
       flex-direction: column-reverse;
       margin: 1rem 2rem 0;
-      small {
-        margin: 0 2rem;
-      }
-    }
-    @include for-tablet-only {
-      small {
-        margin: 0 3rem;
-      }
-    }
-    @include for-small-screens {
-      small {
-        margin: 0 4rem;
-      }
-    }
-    @include for-large-screens {
-      small {
-        margin: 0 4rem;
-      }
     }
 
     ul {
@@ -162,6 +144,9 @@ div.zubi-footer {
               width: 1rem;
               height: 1rem;
             }
+          }
+          &:hover {
+            color: var(--primary);
           }
         }
       }
