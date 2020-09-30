@@ -2,12 +2,20 @@ import ZUBI_LOGO_WHITE from "./assets/images/logos/zubi_white.png";
 import ZUBI_LOGO_BLACK from "./assets/images/logos/zubi_black.png";
 import ZUBI_LOGO_WHITE_SVG from "./assets/images/logos/zubi_white.svg";
 import HERO_IMG from "./assets/images/home/hero.svg";
+import PHONE_EVENT from "./assets/images/home/PhoneScreens/PhoneEvent.png";
+import TESTING from "./assets/images/home/testing.svg";
+import AI from "./assets/images/home/PhoneScreens/AI.svg";
+import BOT from "./assets/images/home/lottie/bot.json";
 
 export const Assets = {
   ZUBI_LOGO_WHITE,
   ZUBI_LOGO_BLACK,
   ZUBI_LOGO_WHITE_SVG,
   HERO_IMG,
+  PHONE_EVENT,
+  TESTING,
+  AI,
+  BOT,
 };
 
 export const RedirectURL = {

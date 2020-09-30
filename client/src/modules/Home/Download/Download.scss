@@ -1,0 +1,82 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+div.zubi-download {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  div.image {
+    margin: auto 20%;
+  }
+  div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-bottom: 1rem;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+    }
+    a {
+      padding: 1rem 2.5rem;
+      color: var(--text-secondary);
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 2rem;
+      @include fluid-type(
+        1rem,
+        1.25rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+      background-color: var(--background-secondary);
+    }
+  }
+  @include for-large-screens {
+    div.image {
+      margin: auto 20%;
+    }
+  }
+  @include for-small-screens {
+    div.image {
+      margin: auto 10%;
+    }
+    div.content {
+      a {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  @include for-tablet-only {
+    div.image {
+      margin: 4rem auto;
+    }
+    div.content {
+      margin: 4rem auto;
+      align-items: flex-start;
+      a {
+        padding: 0.75rem 1.75rem;
+      }
+    }
+  }
+  @include for-mobile-only {
+    div.image {
+      margin: 4rem auto;
+    }
+    div.content {
+      margin: 4rem auto;
+      align-items: flex-start;
+      a {
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}
