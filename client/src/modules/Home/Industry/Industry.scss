@@ -11,42 +11,61 @@ div.zubi-industry {
 
   div.content {
     width: 50%;
+    height: 80vh;
     padding: 2rem;
-    h1 {
-      @include fluid-type(
-        1.5rem,
-        2.5rem,
-        $min-breakpoint-font-size,
-        $max-breakpoint-font-size
-      );
-      span {
-        color: var(--primary);
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.25rem;
+      background-color: var(--background-tertiary);
+
+      &:hover {
+        cursor: pointer;
       }
     }
-    p {
-      margin: 4rem 2rem 4rem 0;
-      font-weight: 500;
-      @include fluid-type(
-        1rem,
-        1.25rem,
-        $min-breakpoint-font-size,
-        $max-breakpoint-font-size
-      );
-    }
-    a {
-      padding: 1rem 2.5rem;
-      color: var(--text-secondary);
-      font-weight: 700;
-      text-transform: uppercase;
-      border-radius: 2rem;
-      @include fluid-type(
-        1rem,
-        1.25rem,
-        $min-breakpoint-font-size,
-        $max-breakpoint-font-size
-      );
-      background-color: var(--primary);
-      box-shadow: 0 25px 40px -20px var(--primary);
+
+    div.inner-content {
+      margin-bottom: 8rem;
+      h1 {
+        @include fluid-type(
+          1.5rem,
+          2.5rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+        span {
+          color: var(--primary);
+        }
+      }
+      p {
+        margin: 4rem 2rem 4rem 0;
+        font-weight: 500;
+        @include fluid-type(
+          1rem,
+          1.25rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+      }
+      a {
+        padding: 1rem 2.5rem;
+        color: var(--text-secondary);
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        @include fluid-type(
+          1rem,
+          1.25rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+        background-color: var(--primary);
+        box-shadow: 0 25px 40px -20px var(--primary);
+      }
     }
   }
   div.image {

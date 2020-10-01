@@ -26,8 +26,19 @@ div.zubi-events {
     width: 50%;
     padding: 2rem;
     z-index: 1;
+    h1 {
+      @include fluid-type(
+        1.5rem,
+        2.5rem,
+        $min-breakpoint-font-size,
+        $max-breakpoint-font-size
+      );
+      span {
+        color: var(--text-secondary);
+      }
+    }
     p {
-      margin: 4rem 2rem 4rem 0;
+      margin: 2rem 2rem 4rem 0;
       font-weight: 500;
       @include fluid-type(
         1rem,

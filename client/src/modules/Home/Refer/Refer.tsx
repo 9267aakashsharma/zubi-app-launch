@@ -8,7 +8,6 @@ const Refer = () => {
         <div className="circle1"></div>
         <div className="circle2"></div>
         <div className="circle3"></div>
-        <div className="circle4"></div>
         <div className="stick"></div>
       </div>
       <div className="inner">

@@ -10,6 +10,9 @@ const Events = () => {
         <div className="circle2"></div>
       </div>
       <div className="content">
+        <h1>
+          Test your <span>emerging technology</span> skill now?{" "}
+        </h1>
         <p>
           Learn from Pro and build a project with a professional mentor. Prepare
           for interviews, polish your resume, and get hired by emerging

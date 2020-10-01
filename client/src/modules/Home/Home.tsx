@@ -7,11 +7,13 @@ import "./Home.scss";
 import Industry from "./Industry/Industry";
 import About from "./About/About";
 import Download from "./Download/Download";
+import Screens from "./Screens/Screens";
 
 const Home = () => {
   return (
     <div className="zubi-home">
       <Hero />
+      <Section child={<Screens />} />
       <Section child={<Refer />} />
       <Section child={<Events />} bgColor="secondary" />
       <Section child={<Industry />} />
