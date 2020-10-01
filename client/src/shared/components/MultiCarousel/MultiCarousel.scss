@@ -1,0 +1,19 @@
+@import "../../../mixins";
+@import "../../../variables";
+
+div.zubi-carousel {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  div.zubi-carousel-item {
+    text-align: center;
+    img {
+      width: 50%;
+      height: auto;
+    }
+    p {
+      margin: auto 4rem;
+    }
+  }
+}

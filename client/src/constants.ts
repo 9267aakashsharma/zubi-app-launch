@@ -6,6 +6,12 @@ import PHONE_EVENT from "./assets/images/home/PhoneScreens/PhoneEvent.png";
 import TESTING from "./assets/images/home/testing.svg";
 import AI from "./assets/images/home/PhoneScreens/AI.svg";
 import BOT from "./assets/images/home/lottie/bot.json";
+import ASSESS from "./assets/images/mockups/Assess.svg";
+import EVENT from "./assets/images/mockups/Event.svg";
+import HOME from "./assets//images/mockups/Home.svg";
+import JOBS from "./assets/images/mockups/Jobs.svg";
+import LOGIN from "./assets/images/mockups/Login.svg";
+import PROFILE from "./assets/images/mockups/Profile.svg";
 
 export const Assets = {
   ZUBI_LOGO_WHITE,
@@ -16,6 +22,14 @@ export const Assets = {
   TESTING,
   AI,
   BOT,
+  MOCKS: {
+    ASSESS,
+    EVENT,
+    HOME,
+    JOBS,
+    LOGIN,
+    PROFILE,
+  },
 };
 
 export const RedirectURL = {
