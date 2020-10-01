@@ -13,6 +13,9 @@ const About = () => {
         <img src={Assets.AI} alt="AI" />
       </div>
       <div className="content">
+        <h1>
+          About <span>Us</span>
+        </h1>
         <p>
           At Zubi, you'll find a tech family that will serve you for life. A
           network of smart, kind, movers, shakers, and change makers that will

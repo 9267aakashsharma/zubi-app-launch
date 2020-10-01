@@ -19,9 +19,12 @@ div.zubi-about {
         $min-breakpoint-font-size,
         $max-breakpoint-font-size
       );
+      span {
+        color: var(--text-secondary);
+      }
     }
     p {
-      margin: 4rem 2rem 4rem 0;
+      margin: 2rem 2rem 4rem 0;
       font-weight: 500;
       @include fluid-type(
         1rem,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Assets } from "../../../constants";
+import { Assets, RedirectURL } from "../../../constants";
 import "./Events.scss";
 
 const Events = () => {
@@ -19,7 +19,7 @@ const Events = () => {
           technology companies faster. Our mentors help you get more interviews
           and ace them for top tech companies and emerging technology roles.
         </p>
-        <a href="/">Explore Events</a>
+        <a href={RedirectURL.DownloadApp}>Test Skills</a>
       </div>
       <div className="image">
         <img src={Assets.PHONE_EVENT} alt="PHONE_EVENT" />
