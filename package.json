@@ -1,0 +1,13 @@
+{
+  "name": "zubi-app-launch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/9267aakashsharma/zubi-app-launch.git",
+  "author": "Aakash <9267aakashsharma@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn copy && npx tsc-watch --onSuccess \"node ./build/index.js\"",
+    "start": "node ./build/index.js",
+    "build": "npx tsc && cd client && yarn && yarn build && npx ncp build ../build/client"
+  }
+}

@@ -4,7 +4,7 @@ import "./App.scss";
 import { Home } from "./modules";
 
 export const darkTheme = {
-  "--primary": "#0062E3",
+  "--primary": "#00b0b7",
   "--secondary": "#EAEFF7",
   "--text-primary": "#ffffff",
   "--text-secondary": "#000000",
@@ -14,7 +14,7 @@ export const darkTheme = {
 } as React.CSSProperties;
 
 export const lightTheme = {
-  "--primary": "#0062E3",
+  "--primary": "#00b0b7",
   "--secondary": "#EAEFF7",
   "--text-primary": "#000000",
   "--text-secondary": "#ffffff",
