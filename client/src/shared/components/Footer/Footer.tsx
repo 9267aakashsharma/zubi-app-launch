@@ -7,15 +7,20 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { Assets, RedirectURL } from "../../../constants";
+import { RedirectURL } from "../../../constants";
+import Logo from "../Logo/Logo";
 import "./Footer.scss";
 
-const Footer = () => {
+interface Props {
+  theme?: string;
+}
+
+const Footer = (props: Props) => {
   return (
     <div className="zubi-footer">
       <div className="inner">
         <div className="logo">
-          <img src={Assets.ZUBI_LOGO_WHITE_SVG} alt="ZUBI_LOGO" />
+          <Logo theme={props.theme} title={null} />
           <h2>Zubi.io</h2>
         </div>
         <div className="content">

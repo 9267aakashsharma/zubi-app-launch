@@ -38,7 +38,6 @@ div.zubi-download {
     }
     a {
       padding: 1rem 2.5rem;
-      color: var(--text-secondary);
       font-weight: 700;
       text-transform: uppercase;
       border-radius: 2rem;
@@ -49,7 +48,11 @@ div.zubi-download {
         $max-breakpoint-font-size
       );
       background-color: var(--primary);
-      box-shadow: 0 20px 30px -20px var(--primary);
+      transform: scaleX(1);
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scaleX(1.1);
+      }
     }
   }
   @include for-large-screens {

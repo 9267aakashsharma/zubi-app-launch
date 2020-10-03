@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+i,
+button {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-primary);
+}
+
+div.App {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}

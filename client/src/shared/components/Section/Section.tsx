@@ -1,6 +1,5 @@
 import React from "react";
 import classNames from "classnames";
-import { styleTheme } from "../../../App";
 import "./Section.scss";
 
 interface Props {
@@ -14,7 +13,6 @@ const Section = (props: Props) => {
       className={classNames("zubi-section", {
         bgSecondary: props.bgColor === "secondary",
       })}
-      style={styleTheme}
     >
       {props.child}
     </div>

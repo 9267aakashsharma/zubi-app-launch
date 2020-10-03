@@ -9,17 +9,22 @@ import About from "./About/About";
 import Download from "./Download/Download";
 import Screens from "./Screens/Screens";
 
-const Home = () => {
+interface Props {
+  theme?: string;
+  toggleTheme: () => void;
+}
+
+const Home = (props: Props) => {
   return (
     <div className="zubi-home">
-      <Hero />
+      <Hero theme={props.theme} toggleTheme={props.toggleTheme} />
       <Section child={<Screens />} />
       <Section child={<Refer />} />
       <Section child={<Events />} bgColor="secondary" />
       <Section child={<Industry />} />
       <Section child={<About />} bgColor="secondary" />
       <Section child={<Download />} />
-      <Footer />
+      <Footer theme={props.theme} />
     </div>
   );
 };

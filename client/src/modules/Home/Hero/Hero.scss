@@ -57,12 +57,16 @@ div.zubi-hero {
         text-transform: uppercase;
         margin: 2rem 0;
         background-color: var(--primary);
-        box-shadow: 0 25px 40px -20px var(--primary);
         color: var(--text-primary);
         padding: 1rem 3rem;
         text-decoration: none;
         border-radius: 2rem;
         font-weight: 700;
+        transform: scaleX(1);
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scaleX(1.1);
+        }
         @include for-mobile-only {
           padding: 0.5rem 2rem;
           margin: 1rem 0;

@@ -47,21 +47,14 @@ div.zubi-events {
         $max-breakpoint-font-size
       );
     }
-    a {
+    a.download {
       padding: 1rem 2rem;
       color: var(--text-primary);
       background-color: var(--background-primary);
-      box-shadow: 0 25px 40px -20px var(--background-primary);
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
       border-radius: 2rem;
-      word-spacing: 0.5rem;
-      @include fluid-type(
-        1rem,
-        1.25rem,
-        $min-breakpoint-font-size,
-        $max-breakpoint-font-size
-      );
+      margin: auto 0;
     }
     @include for-large-screens {
       padding: 2rem;

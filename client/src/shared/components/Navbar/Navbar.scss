@@ -38,6 +38,40 @@ div.zubi-navbar {
       $min-breakpoint-font-size,
       $max-breakpoint-font-size
     );
+
+    div.toggle-theme {
+      display: flex;
+      flex-direction: row;
+      border: 2px solid var(--text-primary);
+      border-radius: 1rem;
+      padding: 0.15rem 0.25rem;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.invert {
+        flex-direction: row-reverse;
+      }
+      div.text {
+        @include fluid-type(
+          0.75rem,
+          0.75rem,
+          $min-breakpoint-font-size,
+          $max-breakpoint-font-size
+        );
+        margin: auto 0.25rem;
+      }
+      div.ball {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: var(--text-primary);
+      }
+    }
+
     a {
       margin: 0 2rem;
       text-decoration: none;

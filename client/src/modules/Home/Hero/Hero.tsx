@@ -3,10 +3,15 @@ import { Assets, RedirectURL } from "../../../constants";
 import { Bubbles, Navbar } from "../../../shared/components";
 import "./Hero.scss";
 
-const Hero = () => {
+interface Props {
+  theme?: string;
+  toggleTheme: () => void;
+}
+
+const Hero = (props: Props) => {
   return (
     <div className="zubi-hero">
-      <Navbar />
+      <Navbar theme={props.theme} toggleTheme={props.toggleTheme} />
       <div className="hero-inner">
         <div className="content">
           <h1>

@@ -12,6 +12,7 @@ div.zubi-logo {
   }
   p {
     display: inline-block;
+    font-weight: 600;
     margin: auto 1rem;
     @include fluid-type(
       0.75rem,
@@ -19,5 +20,15 @@ div.zubi-logo {
       $min-breakpoint-font-size,
       $max-breakpoint-font-size
     );
+  }
+
+  @include for-mobile-only {
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    p {
+      margin: auto 0.5rem;
+    }
   }
 }

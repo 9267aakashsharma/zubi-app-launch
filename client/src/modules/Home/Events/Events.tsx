@@ -19,7 +19,9 @@ const Events = () => {
           technology companies faster. Our mentors help you get more interviews
           and ace them for top tech companies and emerging technology roles.
         </p>
-        <a href={RedirectURL.DownloadApp}>Test Skills</a>
+        <a className="download" href={RedirectURL.DownloadApp}>
+          Test Skills
+        </a>
       </div>
       <div className="image">
         <img src={Assets.PHONE_EVENT} alt="PHONE_EVENT" />
